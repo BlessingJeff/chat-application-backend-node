@@ -6,6 +6,7 @@ const messageRoutes = require("./routes/messages");
 const app = express();
 const socket = require("socket.io");
 require("dotenv").config();
+// MONGO_URL="mongodb://localhost:27017/chat"
 
 app.use(cors());
 app.use(express.json());
