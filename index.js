@@ -11,6 +11,8 @@ require("dotenv").config();
 app.use(cors());
 app.use(express.json());
 
+const MONGO_URL = "mongodb+srv://blessingaslan:blessing@cluster0.fy8yq.mongodb.net?retryWrites=true&w=majority"
+
 mongoose
   .connect(process.env.MONGO_URL, {
     useNewUrlParser: true,
